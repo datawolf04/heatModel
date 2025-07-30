@@ -20,9 +20,23 @@
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.050000000000000003" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_050000000000000003</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
         <Time Value="0.10000000000000001" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
           <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_10000000000000001</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.15000000000000002" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_15000000000000002</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
@@ -34,23 +48,51 @@
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="0.30000000000000004" />
+        <Time Value="0.25" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_30000000000000004</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_25</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="0.40000000000000002" />
+        <Time Value="0.29999999999999999" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_40000000000000002</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_29999999999999999</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="0.5" />
+        <Time Value="0.34999999999999998" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_5</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_34999999999999998</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.39999999999999997" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_39999999999999997</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.44999999999999996" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_44999999999999996</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.49999999999999994" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_49999999999999994</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0.54999999999999993" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_54999999999999993</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
@@ -62,100 +104,205 @@
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="0.69999999999999996" />
+        <Time Value="0.65000000000000002" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_69999999999999996</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_65000000000000002</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="0.79999999999999993" />
+        <Time Value="0.70000000000000007" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_79999999999999993</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_70000000000000007</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="0.89999999999999991" />
+        <Time Value="0.75000000000000011" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_89999999999999991</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_75000000000000011</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="0.99999999999999989" />
+        <Time Value="0.80000000000000016" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_99999999999999989</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_80000000000000016</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="1.0999999999999999" />
+        <Time Value="0.8500000000000002" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_0999999999999999</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_8500000000000002</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="1.2" />
+        <Time Value="0.90000000000000024" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_2</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_90000000000000024</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="1.3" />
+        <Time Value="0.95000000000000029" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_3</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/0_95000000000000029</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="1.4000000000000001" />
+        <Time Value="1.0000000000000002" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_4000000000000001</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_0000000000000002</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="1.5000000000000002" />
+        <Time Value="1.0500000000000003" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_5000000000000002</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_0500000000000003</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="1.6000000000000003" />
+        <Time Value="1.1000000000000003" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_6000000000000003</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_1000000000000003</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="1.7000000000000004" />
+        <Time Value="1.1500000000000004" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_7000000000000004</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_1500000000000004</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="1.8000000000000005" />
+        <Time Value="1.2000000000000004" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_8000000000000005</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_2000000000000004</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="1.9000000000000006" />
+        <Time Value="1.2500000000000004" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_9000000000000006</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_2500000000000004</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="2.0000000000000004" />
+        <Time Value="1.3000000000000005" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_0000000000000004</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_3000000000000005</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.3500000000000005" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_3500000000000005</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.4000000000000006" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_4000000000000006</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.4500000000000006" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_4500000000000006</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.5000000000000007" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_5000000000000007</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.5500000000000007" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_5500000000000007</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.6000000000000008" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_6000000000000008</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.6500000000000008" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_6500000000000008</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.7000000000000008" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_7000000000000008</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.7500000000000009" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_7500000000000009</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.8000000000000009" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_8000000000000009</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.850000000000001" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_850000000000001</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.900000000000001" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_900000000000001</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1.9500000000000011" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/1_9500000000000011</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.0000000000000009" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_0000000000000009</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2.0500000000000007" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_0500000000000007</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
@@ -167,205 +314,408 @@
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="2.2000000000000006" />
+        <Time Value="2.1500000000000004" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_2000000000000006</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_1500000000000004</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="2.3000000000000007" />
+        <Time Value="2.2000000000000002" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_3000000000000007</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_2000000000000002</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="2.4000000000000008" />
+        <Time Value="2.25" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_4000000000000008</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_25</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="2.5000000000000009" />
+        <Time Value="2.2999999999999998" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_5000000000000009</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_2999999999999998</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="2.600000000000001" />
+        <Time Value="2.3499999999999996" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_600000000000001</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_3499999999999996</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="2.7000000000000011" />
+        <Time Value="2.3999999999999995" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_7000000000000011</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_3999999999999995</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="2.8000000000000012" />
+        <Time Value="2.4499999999999993" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_8000000000000012</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_4499999999999993</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="2.9000000000000012" />
+        <Time Value="2.4999999999999991" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_9000000000000012</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_4999999999999991</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="3.0000000000000013" />
+        <Time Value="2.5499999999999989" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_0000000000000013</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_5499999999999989</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="3.1000000000000014" />
+        <Time Value="2.5999999999999988" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_1000000000000014</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_5999999999999988</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="3.2000000000000015" />
+        <Time Value="2.6499999999999986" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_2000000000000015</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_6499999999999986</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="3.3000000000000016" />
+        <Time Value="2.6999999999999984" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_3000000000000016</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_6999999999999984</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="3.4000000000000017" />
+        <Time Value="2.7499999999999982" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_4000000000000017</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_7499999999999982</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="3.5000000000000018" />
+        <Time Value="2.799999999999998" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_5000000000000018</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_799999999999998</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="3.6000000000000019" />
+        <Time Value="2.8499999999999979" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_6000000000000019</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_8499999999999979</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="3.700000000000002" />
+        <Time Value="2.8999999999999977" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_700000000000002</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_8999999999999977</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="3.800000000000002" />
+        <Time Value="2.9499999999999975" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_800000000000002</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_9499999999999975</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="3.9000000000000021" />
+        <Time Value="2.9999999999999973" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_9000000000000021</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/2_9999999999999973</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="4.0000000000000018" />
+        <Time Value="3.0499999999999972" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_0000000000000018</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_0499999999999972</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="4.1000000000000014" />
+        <Time Value="3.099999999999997" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_1000000000000014</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_099999999999997</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="4.2000000000000011" />
+        <Time Value="3.1499999999999968" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_2000000000000011</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_1499999999999968</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="4.3000000000000007" />
+        <Time Value="3.1999999999999966" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_3000000000000007</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_1999999999999966</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="4.4000000000000004" />
+        <Time Value="3.2499999999999964" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_4000000000000004</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_2499999999999964</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="4.5" />
+        <Time Value="3.2999999999999963" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_5</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_2999999999999963</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="4.5999999999999996" />
+        <Time Value="3.3499999999999961" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_5999999999999996</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_3499999999999961</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="4.6999999999999993" />
+        <Time Value="3.3999999999999959" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_6999999999999993</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_3999999999999959</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="4.7999999999999989" />
+        <Time Value="3.4499999999999957" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_7999999999999989</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_4499999999999957</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="4.8999999999999986" />
+        <Time Value="3.4999999999999956" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_8999999999999986</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_4999999999999956</DataItem>
         </Attribute>
       </Grid>
       <Grid Name="uCurr" GridType="Uniform">
         <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
-        <Time Value="4.9999999999999982" />
+        <Time Value="3.5499999999999954" />
         <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
-          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_9999999999999982</DataItem>
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_5499999999999954</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.5999999999999952" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_5999999999999952</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.649999999999995" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_649999999999995</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.6999999999999948" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_6999999999999948</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.7499999999999947" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_7499999999999947</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.7999999999999945" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_7999999999999945</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.8499999999999943" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_8499999999999943</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.8999999999999941" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_8999999999999941</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.949999999999994" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_949999999999994</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3.9999999999999938" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/3_9999999999999938</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.0499999999999936" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_0499999999999936</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.0999999999999934" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_0999999999999934</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.1499999999999932" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_1499999999999932</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.1999999999999931" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_1999999999999931</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.2499999999999929" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_2499999999999929</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.2999999999999927" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_2999999999999927</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.3499999999999925" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_3499999999999925</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.3999999999999924" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_3999999999999924</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.4499999999999922" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_4499999999999922</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.499999999999992" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_499999999999992</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.5499999999999918" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_5499999999999918</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.5999999999999917" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_5999999999999917</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.6499999999999915" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_6499999999999915</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.6999999999999913" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_6999999999999913</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.7499999999999911" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_7499999999999911</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.7999999999999909" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_7999999999999909</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.8499999999999908" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_8499999999999908</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.8999999999999906" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_8999999999999906</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.9499999999999904" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_9499999999999904</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="uCurr" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4.9999999999999902" />
+        <Attribute Name="uCurr" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="18081 1" Format="HDF">slab.h5:/Function/uCurr/4_9999999999999902</DataItem>
         </Attribute>
       </Grid>
     </Grid>

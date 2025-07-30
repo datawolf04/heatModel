@@ -19,7 +19,7 @@ from ufl import (SpatialCoordinate, inner, Measure, TrialFunction, TestFunction,
 # Set up the simulation parameters
 t = 0 
 final_time = 5.0  # Final time for the simulation
-dt = 0.1  # Time step size
+dt = 0.05  # Time step size
 num_steps = int((final_time - t) / dt)  
 T0 = 10.0  # Initial uniform temperature of the rod
 extTemp = 0.0  # External temperature at the boundaries (constant)
@@ -42,7 +42,7 @@ domain = mesh.create_box(
     ghost_mode=mesh.GhostMode.shared_facet  # Ghost mode for shared facets
 )
 
-V = functionspace(domain, ("Lagrange", 1))#, (domain.geometry.dim, )))
+V = functionspace(domain, ("Lagrange", 1))
 tdim = domain.topology.dim  # Topological dimension of the domain
 
 x = SpatialCoordinate(domain)  # Spatial coordinates of the domain
@@ -71,12 +71,12 @@ uCurr.interpolate(initial_condition)  # Initialize with the same initial conditi
 #######################################
 # Define the boundary conditions
 boundaries = [
-  (1, lambda x: np.isclose(x[0], 0.0)),  # Left boundary at x=0
-  (2, lambda x: np.isclose(x[0], L)),  # Right boundary at x=1
-  (3, lambda x: np.isclose(x[1], 0.0)),  # Left boundary at x=0
-  (4, lambda x: np.isclose(x[1], W)),  # Right boundary at x=1
-  (5, lambda x: np.isclose(x[2], 0.0)),  # Left boundary at x=0
-  (6, lambda x: np.isclose(x[2], H))  # Right boundary at x=1
+  (1, lambda x: np.isclose(x[0], 0.0)),  # Back boundary at x=0
+  (2, lambda x: np.isclose(x[0], L)),  # Front boundary at x=L
+  (3, lambda x: np.isclose(x[1], 0.0)),  # Left boundary at y=0
+  (4, lambda x: np.isclose(x[1], W)),  # Right boundary at y=W
+  (5, lambda x: np.isclose(x[2], 0.0)),  # Bottom boundary at z=0
+  (6, lambda x: np.isclose(x[2], H))  # Top boundary at z=H
 ]
 
 facet_indices, facet_markers = [], []
@@ -128,11 +128,11 @@ grid = pyvista.UnstructuredGrid(*plot.vtk_mesh(V))
 plotter = pyvista.Plotter()
 plotter.open_gif("slabTemp.gif", fps=10)
 
-grid.point_data["uCurr"] = uCurr.x.array
+grid.point_data["Temperature"] = uCurr.x.array
 
-viridis = mpl.colormaps.get_cmap("viridis").resampled(25)
-sargs = dict(title_font_size=25, label_font_size=20, fmt="%.2e", color="black",
-             position_x=0.1, position_y=0.8, width=0.8, height=0.1)
+viridis = mpl.colormaps.get_cmap("viridis").resampled(40)
+sargs = dict(title_font_size=20, label_font_size=18, fmt="%.0f", color="black",
+             position_x=0.1, position_y=0.9, width=0.8, height=0.1)
 
 renderer = plotter.add_mesh(grid, show_edges=True, lighting=False,
                             cmap=viridis, scalar_bar_args=sargs,
@@ -162,7 +162,7 @@ for i in range(num_steps):
 
     # Update the visualization
     xdmf.write_function(uCurr, t)  # Write the initial condition to the XDMF file 
-    grid.point_data["uCurr"] = uCurr.x.array
+    grid.point_data["Temperature"] = uCurr.x.array
     plotter.write_frame()  # Write the current frame to the GIF
 
 plotter.close()  # Close the plotter
