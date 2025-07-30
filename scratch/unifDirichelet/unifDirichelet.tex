@@ -1,0 +1,179 @@
+\documentclass{article}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\setlist{nosep}
+\usepackage{tcolorbox}
+\usepackage[per-mode=fraction]{siunitx}
+\usepackage{tikz}
+
+\usetikzlibrary { decorations.pathmorphing, decorations.pathreplacing, decorations.shapes,
+  angles, quotes}
+
+
+
+
+\title{Homogeneous Heat Equation -- The 1D Rod with Dirichelet BCs and a uniform initial temperature} 
+\author{SF Wolf}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Problem setup}
+
+Model a 1D object that has a length of 1, with a uniform initial temperature $T_0$. Each end of
+the rod will be held at a temperature of 0. Assume no heat escapes along the length of the
+rod. There are no external heat sources or sinks.
+
+We can describe this system by the following set of equations:
+\begin{align}
+  \frac{\partial u(x,t)}{\partial t} - \frac{\partial^2 u(x,t)}{\partial x^2} = 0
+  & \qquad x\in[0,1], t>0 \label{eq:pde}\\
+  u(0,t) = u(1,t) = 0   & \qquad t>0 \label{eq:bc}\\
+  u(x,0) = T_0   & \qquad x\in[0,1] \label{eq:ic}
+\end{align}
+
+\subsection{Step 1: Convert PDE to ODEs}
+Our first step is to convert our partial differential equation (\ref{eq:pde}) into multiple
+ordinary differential equations. We will apply the \textit{separation of variables} technique:
+\begin{equation}
+  \label{eq:sepVar}
+  u(x,t) = X(x) T(t)
+\end{equation}
+Inserting this definition into the above, we get:
+\[
+  X(x)\frac{dT(t)}{dt} = \frac{d^2X(x)}{dx^2} T(t)
+\]
+Divide by $u(x,t) = X(x) T(t)$ and we get:
+\[
+  \frac{1}{T(t)}\frac{dT(t)}{dt} = \frac{1}{X(x)} \frac{d^2X(x)}{dx^2}
+\]
+This expression has the form
+\[
+  \text{Stuff that only depends on } t = \text{Stuff that only depends on } x
+\]
+So both sides must be constant. This allows us to write:
+\begin{align}
+  \frac{dT(t)}{dt} &= -\lambda T(t) \label{eq:ode1} \\
+  \frac{d^2X(x)}{dx^2} &= -\lambda X(x) \label{eq:ode2}
+\end{align}
+
+\paragraph{Revised Boundary condition}
+If we apply separation of variables to the boundary condition in equation (\ref{eq:bc}), we
+get:
+\[
+  0 = u(0,t) = X(0) T(t)
+\]
+and
+\[
+  0 = u(1,t) = X(1) T(t)
+\]
+Assuming that the function $T(t)\neq 0$, then we can write
+\begin{equation}
+  \label{eq:newbc}
+  X(0) = X(1) = 0
+\end{equation}
+
+\subsection{Step 2: Get a general solution for $u(x,t)$}
+Next, we will get a general solution for $u(x,t)$. We will do this by considering 3 cases:
+\begin{enumerate}
+  \item $\lambda = 0$
+  \item $\lambda > 0$
+  \item $\lambda < 0$
+\end{enumerate}
+and apply the boundary conditions in equation (\ref{eq:newbc}) to each case
+
+\subsubsection{Case 1: $\lambda = 0$}
+If $\lambda = 0$, then we can write equation (\ref{eq:ode2}) as:
+\[
+  \frac{d^2X(x)}{dx^2} = 0 \implies X(x) = ax+b
+\]
+If we use the boundary condition in equation (\ref{eq:newbc}) to find $a$ and $b$, we get
+\[
+  a = b = 0 \implies X(x) = 0
+\]
+This is what math texts would call the trivial solution, and I call BORING! So we throw that
+solution out.
+
+\subsubsection{Case 2: $\lambda > 0$}
+If $\lambda > 0$, then we can define a $k>0$ such that $\lambda = k^2$ and then we
+can write equation (\ref{eq:ode2}) as:
+\[
+  \frac{d^2X(x)}{dx^2} = -k^2 X(x) \implies X(x) = a\sin(kx) + b\cos(kx)
+\]
+If we use the boundary condition at $x=0$ in equation (\ref{eq:newbc}) to find $a$, $b$, and
+$k$ we get
+\[
+  X(0) = 0 = a\sin 0 + b \cos 0 \implies b=0 \implies X(x) = a \sin(kx)
+\]
+Now apply the boundary condition at $x=1$:
+\[
+  X(1) = 0 = a \sin k \implies a = 0 \text{ or } \sin k=0
+\]
+Allowing $a=0$ is boring--as defined above, so let's find possible values for $k$:
+\[
+  \sin k = 0 \implies k = n\pi, n\in\mathbb{N} \qquad (n=1, 2, 3, \ldots)
+\]
+So we know there are infinitely many solutions of the form
+\[
+  X(x) = a \sin(n\pi x) \quad \lambda = n^2\pi^2 \quad n\in\mathbb{N}
+\]
+
+\subsubsection{Case 3: $\lambda < 0$}
+If $\lambda < 0$, then we can define a $\kappa>0$ such that $\lambda = -\kappa^2$ and then we
+can write equation (\ref{eq:ode2}) as:
+\[
+  \frac{d^2X(x)}{dx^2} = \kappa^2 X(x) \implies X(x) = a\sinh(\kappa x) + b\cosh(\kappa x)
+\]
+If we use the boundary condition at $x=0$ in equation (\ref{eq:newbc}) to find $a$, $b$, and
+$k$ we get
+\[
+  X(0) = 0 = a\sinh 0 + b \cosh 0 \implies b=0 \implies X(x) = a \sinh(\kappa x)
+\]
+Now apply the boundary condition at $x=1$:
+\[
+  X(1) = 0 = a \sinh \kappa \implies a = 0 \text{ or } \sinh \kappa=0
+\]
+Allowing $a=0$ is boring--as defined above, however, $\sinh \kappa = 0$ only when $\kappa=0$
+which is also not allowed. So this case has no meaningful solutions as well.
+
+Since we need to include all possible solutions in our general solution, we can write:
+
+\begin{align}
+  \label{eq:genSol}
+  u(x,t) &= \sum_{n=1}^{\infty} X_n(x) T_n(t) \nonumber \\
+   &= \sum_{n=1}^{\infty} a_n \sin(n\pi x) e^{-n^2\pi^2t}
+\end{align}
+
+\subsection{Step 3: Find our particular solution for $u(x,t)$}
+Use the initial condition in equation (\ref{eq:ic}) to find our particular solution for
+$u(x,t)$, specifically, we can say:
+\[
+  T_0 = \sum_{n=1}^{\infty} a_n \sin(n\pi x)
+\]
+We can get the constants $a_n$ by integrating the above equation as follows
+\[
+  \int_0^1 dx \sin(m\pi x) T_0 = 
+  \int_0^1 dx \sin(m\pi x) \sum_{n=1}^{\infty} a_n \sin(n\pi x)
+\]
+Solving the integrals, we find:
+\[
+  a_n = 2T_0 \int_0^1 \sin(n\pi x) =
+  \begin{cases}
+    0 & n=2,4,6,\ldots \\
+    \frac{4T_0}{n\pi} & n=1,3,5,\ldots
+  \end{cases}
+\]
+Therefore:
+\begin{equation}
+  \label{eq:finalSoln}
+  u(x,t) = \sum_{n=1}^{\infty} \frac{4T_0}{(2n-1)\pi}\sin\left((2n-1)\pi x\right) e^{-(2n-1)^2\pi^2t}  
+\end{equation}
+
+
+
+
+
+\end{document}
