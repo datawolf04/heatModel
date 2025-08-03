@@ -3,6 +3,7 @@
 
 import numpy as np
 import matplotlib as mpl
+# from matplotlib.colors import LinearSegmentedColormap, ListedColormap
 
 from petsc4py import PETSc
 from mpi4py import MPI
@@ -19,15 +20,15 @@ from ufl import (SpatialCoordinate, inner, Measure, TrialFunction, TestFunction,
 # Set up the simulation parameters
 t = 0 
 final_time = 5.0  # Final time for the simulation
-dt = 0.05  # Time step size
+dt = 0.1  # Time step size
 num_steps = int((final_time - t) / dt)  
-T0 = 10.0  # Initial uniform temperature of the rod
+initTemp = 10.0  # Initial uniform temperature of the rod
 extTemp = 0.0  # External temperature at the boundaries (constant)
 tPlot = np.linspace(0, final_time, num_steps+1)  # Time points for plotting
 L = 1.0  # Length of the slab
 W = 2.0  # Width of the slab 
 H = 1.0  # Height of the slab 
-dl = 0.05 # Element size for the mesh
+dl = 0.1 # Element size for the mesh
 nx, ny, nz = int(L/dl), int(W/dl), int(H/dl)  # Number of elements in each direction
 
 # Define the mesh and function space
@@ -54,8 +55,8 @@ kappa = Constant(domain, PETSc.ScalarType(1.0))  # Thermal conductivity
 
 #########################################
 # Set up the initial condition
-def initial_condition(x, Temp=T0, a=0):
-    return Temp * np.exp(-a * (x[0]**2 + x[1]**2 + x[2]**2))  # Initial temperature T0
+def initial_condition(x, Temp=initTemp, a=0):
+    return Temp * np.exp(-a * (x[0]**2 + x[1]**2 + x[2]**2))  # Initial temperature initTemp
 # For some reason, I need to include the x variable terms to define the shape of the 
 # function correctly.
 
@@ -123,22 +124,21 @@ solver.getPC().setType(PETSc.PC.Type.LU)  # Use LU preconditioner (Gauss elimina
 
 pyvista.start_xvfb()
 
-grid = pyvista.UnstructuredGrid(*plot.vtk_mesh(V))
+domain.topology.create_connectivity(tdim, tdim)
+topology, cell_types, geometry = plot.vtk_mesh(V)
+grid = pyvista.UnstructuredGrid(topology, cell_types, geometry)
+grid.point_data["Temperature"] = uCurr.x.array
+grid.set_active_scalars("Temperature")
+
+sargs = dict(title_font_size=20, label_font_size=12, fmt="%.0f", color="black",
+            position_x=0.1, position_y=0.9, width=0.8, height=0.07)
 
 plotter = pyvista.Plotter()
 plotter.open_gif("slabTemp.gif", fps=10)
-
-grid.point_data["Temperature"] = uCurr.x.array
-
-viridis = mpl.colormaps.get_cmap("viridis").resampled(40)
-sargs = dict(title_font_size=20, label_font_size=18, fmt="%.0f", color="black",
-             position_x=0.1, position_y=0.9, width=0.8, height=0.1)
-
 renderer = plotter.add_mesh(grid, show_edges=True, lighting=False,
-                            cmap=viridis, scalar_bar_args=sargs,
-                            clim=[0, max([extTemp, max(uCurr.x.array)])])
-
-
+                 cmap='viridis', scalar_bar_args=sargs,
+                 clim=[extTemp,initTemp])
+plotter.write_frame()  # Write the current frame to the GIF
 
 # Time-stepping loop
 for i in range(num_steps):
